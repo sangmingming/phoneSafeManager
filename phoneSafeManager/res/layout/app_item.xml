@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dip"
+    android:background="@drawable/item_background_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="功能名字"
+        android:textSize="22sp" />
+
+</LinearLayout>

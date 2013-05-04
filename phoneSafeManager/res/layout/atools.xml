@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_atools_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="手机号码归属地查询"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="设置手机归属地服务"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_atools_address"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="归属地服务未开启"
+                android:textColor="#ffff0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_atools_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="更改归属地显示风格"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_change_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="更改归属地显示位置"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_sms_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="短信备份"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_sms_restore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="短信的还原"
+        android:textSize="24sp" />
+            <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="程序锁"
+        android:textSize="24sp" />
+            <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_atools_common_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="常用电话号码"
+        android:textSize="24sp" />
+</LinearLayout>

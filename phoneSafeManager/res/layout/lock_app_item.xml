@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dip"
+    android:background="@drawable/item_background_selector"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="功能名字"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_app_packname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="包名"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_app_lock_status"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/unlock" />
+
+</RelativeLayout>

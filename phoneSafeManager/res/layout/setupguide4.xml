@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="4.恭喜你,设置完成" />
+
+    <ImageView style="@style/devide_line_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginTop="8dip"
+        android:text="强烈建议你开启保护" />
+
+    <CheckBox
+        android:id="@+id/cb_isprotecting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保护没有开启" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_on_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/luyang" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_setup_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/next"
+            android:text="设置完成" />
+
+        <Button
+            android:id="@+id/bt_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/previous"
+            android:text="上一步" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -16,5 +16,48 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+     <style name="text_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#ff00ff66</item>
+    </style>
+
+    <style name="devide_line_style">
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@drawable/devide_line</item>
+    </style>
+
+    <style name="text_content_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff00ff66</item>
+    </style>
+
+    <style name="image_star_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/btn_star_big_on</item>
+    </style>
+
+    <style name="image_status_on_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/presence_online</item>
+    </style>
+
+    <style name="image_status_off_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/presence_invisible</item>
+    </style>
+
+    <style name="activity_float_no_title" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
 </resources>

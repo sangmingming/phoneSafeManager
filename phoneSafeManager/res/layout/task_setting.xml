@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="设置显示"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_show_system_app"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="不显示系统进程"
+                android:textColor="#ffff0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_show_system_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="设置锁屏清理内存"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_kill_process"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="锁屏不清理"
+                android:textColor="#ffff0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_kill_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+        
+  
+</LinearLayout>

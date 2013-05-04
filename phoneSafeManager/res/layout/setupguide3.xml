@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="3.设置安全号码" />
+
+    <ImageView style="@style/devide_line_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginTop="8dip"
+        android:text="sim卡更换后会把报警短信,发送到该号码上" />
+
+    <EditText
+        android:id="@+id/et_setup3_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入或者选择安全手机号码" />
+
+    <Button
+        android:id="@+id/bt_select_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="选择联系人" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+        <ImageView style="@style/image_status_on_style" />
+        <ImageView style="@style/image_status_off_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/next"
+            android:id="@+id/bt_next"
+            android:text="下一步" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/previous"
+            android:id="@+id/bt_pre"
+            android:text="上一步" />
+    </RelativeLayout>
+
+</LinearLayout>
