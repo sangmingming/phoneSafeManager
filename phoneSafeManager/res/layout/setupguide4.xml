@@ -6,6 +6,8 @@
     android:orientation="vertical" >
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="4.恭喜你,设置完成" />
 
     <ImageView style="@style/devide_line_style" />

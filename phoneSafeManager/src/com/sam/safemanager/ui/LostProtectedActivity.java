@@ -15,7 +15,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -132,8 +131,8 @@ public class LostProtectedActivity extends Activity implements OnClickListener {
 					}else{
 						Logger.i("激活设置向导界面");
 						finish();
-						//Intent intent = new Intent(LostProtectedActivity.this,SetupGudie1Activity.class);
-						//startActivity(intent);
+						Intent intent = new Intent(LostProtectedActivity.this,SetupGudie1Activity.class);
+						startActivity(intent);
 					}
 					
 					
@@ -146,8 +145,8 @@ public class LostProtectedActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.tv_reentry_setup_guide:
 			finish();
-			//Intent intent = new Intent(LostProtectedActivity.this,SetupGudie1Activity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(LostProtectedActivity.this,SetupGudie1Activity.class);
+			startActivity(intent);
 		}
 		
 	}
