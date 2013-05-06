@@ -65,6 +65,8 @@ public class MainActivity extends Activity implements OnItemClickListener{
 			break;
 		case 7:
 			Logger.i("高级工具");
+			Intent atoolsIntent = new Intent(MainActivity.this,AToolsActivity.class);
+			startActivity(atoolsIntent);
 			break;
 		case 8:
 			Logger.i("设置中心");

@@ -3,20 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
     <EditText
+        android:layout_weight="1"
         android:id="@+id/et_query_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </EditText>
 
     <Button
+        android:layout_weight="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="查询" 
-        android:onClick="query"
+        android:id= "@+id/btn_query"
         />
-
+</LinearLayout>
     <TextView
         android:id="@+id/tv_query_number_address"
         android:layout_width="wrap_content"
