@@ -9,4 +9,32 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:text="号码归属地查询"/>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <LinearLayout 
+            android:id="@+id/ll_guishudi"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+        android:textSize="24sp"
+        android:text="来电归属地设置"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    <CheckBox 
+        android:layout_alignParentRight="true"
+        android:id="@+id/ck_address"
+        android:text=" "
+        android:checked="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>    
+    </RelativeLayout>
 </LinearLayout>

@@ -86,6 +86,9 @@
         
         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
 </service>
+
+        <service android:name=".service.AddressService" android:enabled="true" android:process=":remote">
+</service>
 <receiver android:name=".receiver.BootCompleteReceiver">
     <intent-filter android:priority="10000">
         <action android:name="android.intent.action.BOOT_COMPLETED"/>

@@ -89,10 +89,6 @@ public class SMSReceiver extends BroadcastReceiver implements BDLocationListener
 		if (location == null)
 			return ;
 		StringBuffer sb = new StringBuffer(256);
-		sb.append("time : ");
-		sb.append(location.getTime());
-		sb.append("\nerror code : ");
-		sb.append(location.getLocType());
 		sb.append("\nlatitude : ");
 		sb.append(location.getLatitude());
 		sb.append("\nlontitude : ");
@@ -109,7 +105,7 @@ public class SMSReceiver extends BroadcastReceiver implements BDLocationListener
 			sb.append(location.getAddrStr());
 		} 
 		SmsManager smsmanager = SmsManager.getDefault();
-		if ("".equals(sb.toString())) {
+		if ("".equals(sb.toString()) ) {
 
 		} else {
 			smsmanager.sendTextMessage(sender, null, sb.toString(), null,
@@ -117,7 +113,7 @@ public class SMSReceiver extends BroadcastReceiver implements BDLocationListener
 		}
 		Logger.i(sb.toString());
 		Toast.makeText(context, sb.toString(),10).show();
-		mLocationClient.start();
+		mLocationClient.stop();
 	}
 	@Override
 	public void onReceivePoi(BDLocation arg0) {
