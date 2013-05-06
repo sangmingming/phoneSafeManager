@@ -47,9 +47,15 @@ public class MainActivity extends Activity implements OnItemClickListener{
 			break;
 		case 1:
 			Logger.i("通讯卫士");
+			Intent callsmsIntent = new Intent(MainActivity.this,
+					CallSmsActivity.class);
+			startActivity(callsmsIntent);
 			break;
 		case 2:
 			Logger.i("软件管理");
+			Intent appmanagerIntent = new Intent(MainActivity.this,
+					AppManagerActivity.class);
+			startActivity(appmanagerIntent);
 			break;
 		case 3:
 			Logger.i("任务管理");

@@ -54,10 +54,18 @@
         <activity
             android:label="@string/app_name"
             android:name=".ui.LostProtectedActivity" >
+        </activity> 
+        <activity
+            android:label="@string/app_name"
+            android:name=".ui.CallSmsActivity" >
         </activity>
         <activity
             android:label="@string/app_name"
             android:name=".ui.AToolsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ui.AppManagerActivity" >
         </activity>
         <activity
             android:label="@string/app_name"
@@ -79,6 +87,7 @@
             android:label="@string/app_name"
             android:name="com.sam.safemanager.ui.SetupGudie4Activity" >
         </activity>
+       
         <activity
             android:label="@string/app_name"
             android:name="com.sam.safemanager.ui.SelectContactActivity" >

@@ -1,10 +1,12 @@
 package com.sam.safemanager.receiver;
 
+
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.sam.safemanager.R;
+import com.sam.safemanager.db.dao.BlackNumberDao;
 import com.sam.safemanager.util.Logger;
 
 import android.app.admin.DevicePolicyManager;
@@ -23,11 +25,12 @@ public class SMSReceiver extends BroadcastReceiver implements BDLocationListener
 	private MediaPlayer player;
 	private Context context;
 	String sender;
+	private BlackNumberDao dao;
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		this.context = context;
 		sp = context.getSharedPreferences("config", Context.MODE_PRIVATE);
-		
+		dao = new BlackNumberDao(context);
 		//获取短信内容
 		//#*location*#密码
 		Object[] pdus = (Object[]) intent.getExtras().get("pdus");
@@ -82,7 +85,20 @@ public class SMSReceiver extends BroadcastReceiver implements BDLocationListener
 				manager.wipeData(0);
 				abortBroadcast();
 			}
+			
+			if(dao.find(sender)){
+				// 黑名单的短信
+				abortBroadcast();
+				//todo: 把短信内容存放到自己的数据库里面
+			}
+			
+			//建立短信内容的匹配库 (关键字: 发票,卖房,哥,学生....办证...)
+			if(content.contains("fapiao")){
+				Logger.i("垃圾短信 发票");
+				abortBroadcast();
+			}
 		}
+		
 	}
 	@Override
 	public void onReceiveLocation(BDLocation location) {

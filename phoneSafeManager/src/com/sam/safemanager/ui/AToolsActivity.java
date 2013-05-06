@@ -1,11 +1,17 @@
 package com.sam.safemanager.ui;
 
+
 import com.sam.safemanager.R;
 import com.sam.safemanager.service.AddressService;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,6 +28,8 @@ public class AToolsActivity extends Activity implements OnClickListener{
 	private SharedPreferences sp;
 	private boolean showAddress = false;
 	private Intent addServiceIntent;
+	private TextView tv_atools_select_bg;
+	private TextView tv_atools_change_location;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,6 +44,14 @@ public class AToolsActivity extends Activity implements OnClickListener{
 		
 		llGuishu.setOnClickListener(this);
 		ckAddress.setOnClickListener(this);
+		tv_atools_change_location = (TextView) this
+				.findViewById(R.id.tv_atools_change_location);
+		tv_atools_change_location.setOnClickListener(this);
+		sp = getSharedPreferences("config", Context.MODE_PRIVATE);
+		tv_atools_select_bg = (TextView) this
+				.findViewById(R.id.tv_atools_select_bg);
+		tv_atools_select_bg.setOnClickListener(this);
+		
 		addServiceIntent = new Intent(this,AddressService.class);
 		ckAddress.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			
@@ -81,6 +97,36 @@ public class AToolsActivity extends Activity implements OnClickListener{
 				showAddress = true;
 			}
 			initAddressSet();
+			break;
+		case R.id.tv_atools_select_bg:
+			AlertDialog.Builder builder = new Builder(this);
+			builder.setTitle("归属地提示显示风格");
+			String[] items = new String[] { "半透明", "活力橙", "苹果绿" };
+			builder.setSingleChoiceItems(items, 0,
+					new DialogInterface.OnClickListener() {
+
+						public void onClick(DialogInterface dialog, int which) {
+							Editor editor = sp.edit();
+							editor.putInt("background", which);
+							editor.commit();
+						}
+					});
+
+			builder.setPositiveButton("确定",
+					new DialogInterface.OnClickListener() {
+
+						public void onClick(DialogInterface dialog, int which) {
+
+						}
+					});
+			builder.create().show();
+			break;
+
+		case R.id.tv_atools_change_location:
+			// 更改来电归属地的显示位置
+			Intent intent = new Intent(this, DragViewActivity.class);
+			startActivity(intent);
+
 			break;
 			
 		}
