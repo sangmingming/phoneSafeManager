@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_my_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/tv_my_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="18sp"
+        android:text="text"
+        />
+
+</LinearLayout>

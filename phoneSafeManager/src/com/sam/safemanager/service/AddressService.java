@@ -33,6 +33,7 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
@@ -142,11 +143,12 @@ public class AddressService extends Service {
 				WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON|WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE, 
 				PixelFormat.TRANSLUCENT);
 		params.gravity = Gravity.LEFT | Gravity.TOP;
-
+		
         params.x =     sp.getInt("lastx", 0);
         params.y =     sp.getInt("lasty", 0);
-
-        view = View.inflate(getApplicationContext(), R.layout.show_location, null);
+        windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        //view = View.inflate(getApplicationContext(), R.layout.show_location, null);
+        view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.show_location, null);
         LinearLayout ll = (LinearLayout) view.findViewById(R.id.ll_location);
 
         int backgroundid = sp.getInt("background", 0);
@@ -161,7 +163,8 @@ public class AddressService extends Service {
         TextView tv = (TextView) view.findViewById(R.id.tv_location);
         tv.setTextSize(24);
         tv.setText(address);
-        windowManager.addView(view , params);
+        if(view !=null)
+        	windowManager.addView(view , params);
 		
 	}
 	/**
