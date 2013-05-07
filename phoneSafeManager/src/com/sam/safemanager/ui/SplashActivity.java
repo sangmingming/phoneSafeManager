@@ -32,7 +32,8 @@ public class SplashActivity extends Activity {
 			
 			@Override
 			public void run() {
-				copyDb();
+				copyDb("clearpath.db");
+				copyDb("naddress.db");
 				
 			}
 		}).start();
@@ -52,9 +53,9 @@ public class SplashActivity extends Activity {
 		}, 1000);
 	}
 	
-	private void copyDb(){
+	private void copyDb(String dbname){
 		String path = "/data/data/com.sam.safemanager/databases/";
-		File f = new File(NumberAddressService.DB_PATH);
+		File f = new File(path+dbname);
 		if(!f.exists()){
 			File fd = new File(path);
 			if(!fd.exists())
@@ -62,7 +63,7 @@ public class SplashActivity extends Activity {
 			FileOutputStream os = null;
 			try {
 				f.createNewFile();
-				os = new FileOutputStream(NumberAddressService.DB_PATH);
+				os = new FileOutputStream(path+dbname);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
@@ -70,7 +71,7 @@ public class SplashActivity extends Activity {
 				e.printStackTrace();
 			}
 			try {
-				InputStream is = SplashActivity.this.getAssets().open("naddress.db");
+				InputStream is = SplashActivity.this.getAssets().open(dbname);
 				byte[] buffer = new byte[1024];
 				int count = 0;
 				while((count = is.read(buffer))>0){

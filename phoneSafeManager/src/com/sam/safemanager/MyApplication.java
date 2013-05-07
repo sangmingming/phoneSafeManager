@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.sam.safemanager.adapter;
+package com.sam.safemanager;
 
 import com.sam.safemanager.bean.TaskInfo;
 import com.sam.safemanager.receiver.LockScreenReceiver;

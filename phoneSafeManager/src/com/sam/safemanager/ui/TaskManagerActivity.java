@@ -3,8 +3,8 @@ package com.sam.safemanager.ui;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sam.safemanager.MyApplication;
 import com.sam.safemanager.R;
-import com.sam.safemanager.adapter.MyApplication;
 import com.sam.safemanager.bean.TaskInfo;
 import com.sam.safemanager.engine.TaskInfoProvider;
 import com.sam.safemanager.util.MyToast;

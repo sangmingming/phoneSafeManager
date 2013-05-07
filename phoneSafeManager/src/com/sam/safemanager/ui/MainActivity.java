@@ -70,17 +70,16 @@ public class MainActivity extends Activity implements OnItemClickListener{
 			startActivity(trafficmanagerIntent);
 			break;
 		case 5:
-			Logger.i("手机杀毒");
+			Logger.i("系统优化");
+			Intent cleanIntent = new Intent(MainActivity.this,CleanActivity.class);
+			startActivity(cleanIntent);
 			break;
 		case 6:
-			Logger.i("系统优化");
-			break;
-		case 7:
 			Logger.i("高级工具");
 			Intent atoolsIntent = new Intent(MainActivity.this,AToolsActivity.class);
 			startActivity(atoolsIntent);
 			break;
-		case 8:
+		case 7:
 			Logger.i("设置中心");
 			break;
 		

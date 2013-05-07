@@ -3,8 +3,8 @@ package com.sam.safemanager.ui;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
+import com.sam.safemanager.MyApplication;
 import com.sam.safemanager.R;
-import com.sam.safemanager.adapter.MyApplication;
 import com.sam.safemanager.bean.TaskInfo;
 
 import android.app.Activity;
