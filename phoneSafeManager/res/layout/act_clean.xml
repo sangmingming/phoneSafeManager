@@ -8,7 +8,7 @@
         android:id="@+id/tv_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="系统优化包括以下项目:\n所有程序缓存\n所有sd卡垃圾文件"
+        android:text="系统优化包括以下项目:\n   所有程序缓存\n   所有sd卡垃圾文件"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     <LinearLayout 
     android:id="@+id/ll_clean"
@@ -24,12 +24,6 @@
            android:layout_width="match_parent"
            android:layout_weight="1"
     android:layout_height="wrap_content" />
-        <Button android:id="@+id/btn_stop"
-            android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="0"
-    android:text="停止"
-            />
         </LinearLayout>
         
          <LinearLayout 
