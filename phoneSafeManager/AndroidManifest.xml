@@ -56,67 +56,67 @@
         <activity
             android:name="com.sam.safemanager.ui.MainActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            android:theme="@android:style/Theme.Light" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.LostProtectedActivity"
-            android:label="@string/app_name" >
+            android:label="手机防盗" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.CallSmsActivity"
-            android:label="@string/app_name" >
+            android:label="通讯卫士" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.TaskManagerActivity"
-            android:label="@string/app_name" >
+            android:label="任务管理" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.AppDetailActivity"
-            android:label="@string/app_name" >
+            android:label="应用管理" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.AToolsActivity"
-            android:label="@string/app_name" >
+            android:label="高级工具" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.DragViewActivity"
-            android:label="@string/app_name" >
+            android:label="归属地位置" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.TrafficManagerActivity"
-            android:label="@string/app_name" >
+            android:label="流量管理" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.AppManagerActivity"
-            android:label="@string/app_name" >
+            android:label="应用管理" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.QueryNumActivity"
-            android:label="@string/app_name" >
+            android:label="查询归属地" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.SetupGudie1Activity"
-            android:label="@string/app_name" >
+            android:label="手机防盗向导1/4" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.SetupGudie2Activity"
-            android:label="@string/app_name" >
+            android:label="手机防盗向导2/4" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.SetupGudie3Activity"
-            android:label="@string/app_name" >
+            android:label="手机防盗向导3/4" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.SetupGudie4Activity"
-            android:label="@string/app_name" >
+            android:label="手机防盗向导4/4" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.SelectContactActivity"
-            android:label="@string/app_name" >
+            android:label="选择联系人" >
         </activity>
         <activity
             android:name="com.sam.safemanager.ui.TaskSettingActivity"
-            android:label="@string/app_name" >
+            android:label="任务管理" >
         </activity>
 
         <service

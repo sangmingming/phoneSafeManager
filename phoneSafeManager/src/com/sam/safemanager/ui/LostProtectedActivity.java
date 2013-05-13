@@ -77,6 +77,7 @@ public class LostProtectedActivity extends Activity implements OnClickListener {
 				}
 			}
 			dialog.dismiss();
+			finish();
 			break;
 		case R.id.bt_normal_dialog_cancle:
 			dialog.dismiss();
