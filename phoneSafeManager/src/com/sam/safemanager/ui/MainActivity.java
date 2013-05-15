@@ -81,6 +81,8 @@ public class MainActivity extends Activity implements OnItemClickListener{
 			break;
 		case 7:
 			Logger.i("…Ë÷√÷––ƒ");
+			Intent settingsIntent = new Intent(MainActivity.this,SettingActivity.class);
+			startActivity(settingsIntent);
 			break;
 		
 		}

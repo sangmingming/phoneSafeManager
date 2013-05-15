@@ -159,6 +159,28 @@
             android:name="com.sam.safemanager.ui.CleanActivity"
             android:label="@string/title_activity_clean" >
         </activity>
+        <activity
+            android:name="com.sam.safemanager.ui.SettingActivity"
+            android:label="设置中心" >
+        </activity>
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5136f52b52701549be000036" >
+        </meta-data>
+        
+        
     </application>
 
 </manifest>
