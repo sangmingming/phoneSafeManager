@@ -61,6 +61,11 @@ public class AToolsActivity extends Activity implements OnClickListener{
 					startService(addServiceIntent);
 				else
 					stopService(addServiceIntent);	
+				
+				sp = getSharedPreferences("config", MODE_PRIVATE);
+				Editor editor = sp.edit();
+				editor.putBoolean("show_address", isChecked);
+				editor.commit();
 			}
 		});
 		sp = getSharedPreferences("config", MODE_PRIVATE);

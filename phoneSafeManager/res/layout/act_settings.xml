@@ -14,5 +14,10 @@
         android:layout_height="1dip"
         android:layout_marginTop="5dip"
         android:background="@android:color/white" />
-
+    <TextView 
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="关  于"/>
 </LinearLayout>

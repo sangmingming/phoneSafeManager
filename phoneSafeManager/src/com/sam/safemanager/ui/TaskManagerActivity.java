@@ -367,26 +367,7 @@ public class TaskManagerActivity extends Activity {
 				return null;
 			}
 
-			/*
-			 * TaskInfo taskinfo = listtaskinfos.get(position); View view =
-			 * View.inflate(TaskManagerActivity.this,
-			 * R.layout.task_manager_item, null); ViewHolder holder = new
-			 * ViewHolder(); holder.iv = (ImageView)
-			 * view.findViewById(R.id.iv_app_icon); holder.tv_name = (TextView)
-			 * view.findViewById(R.id.tv_app_name); holder.tv_memory_size =
-			 * (TextView) view.findViewById(R.id.tv_app_memory_size);
-			 * holder.cb_task_checked = (CheckBox)
-			 * view.findViewById(R.id.cb_task_checked);
-			 * 
-			 * holder.iv.setImageDrawable(taskinfo.getAppicon());
-			 * holder.tv_name.setText("程序名称 "+taskinfo.getAppname());
-			 * holder.tv_memory_size
-			 * .setText("内存占用: "+TextFormater.getKBDataSize(
-			 * taskinfo.getMemorysize()));
-			 * holder.cb_task_checked.setChecked(taskinfo.isIschecked()); return
-			 * view;
-			 */
-
+			
 		}
 
 	}
