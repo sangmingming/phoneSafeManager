@@ -44,7 +44,7 @@ public class SettingActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.tv_about:
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setTitle("关于").setMessage("本程序由桑明明编写，系本人毕业设计，程序功能主要实现手机防盗、通讯卫士、流量监控、系统优化等功能，代码开源，放在github上。");
+			builder.setTitle("关于").setMessage("本程序由桑明明编写，系本人毕业设计，吕刚老师指导，程序功能主要实现手机防盗、通讯卫士、流量监控、系统优化等功能，代码开源，放在github上。");
 			builder.create().show();
 			break;
 		}
